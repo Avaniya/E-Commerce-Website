@@ -1,0 +1,593 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    font-weight: 800;
+    font-family:'Monaco';
+}
+h4{
+    font-family:'Comic Sans MS';
+}
+.logo{
+    width: 50px;
+    height:50px;
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: #000;
+    box-shadow: 0px 3px 15px rgb(44, 42, 42);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 30px;
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#nav li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #d6cfc2;
+    transition: 0.3s ease;
+}
+#nav li a:hover,
+#nav li a.active{
+    color: #a56333;
+}
+#nav li a.active::after,
+#nav li a:hover::after {
+    content: "";
+    width:30%;
+    height: 2px;
+    background: #a56333;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+    
+}
+#mobile{
+    display: none;
+    align-items: center;
+}
+#close{
+    display: none;
+}
+
+
+/* Home page */
+#banner1{
+    padding-left: 80px;
+    background-image: url("Project/banner1.jpg");
+    height: 90vh;
+    background-size: cover;
+    display: flex;
+    align-items: flex-start;
+    justify-content:center ;
+    flex-direction: column;
+}
+#banner1 h1{
+    padding-bottom: 15px;
+    color: #000;
+    font-size: 50px;
+}
+#banner1 h4{
+    padding-bottom: 15px;
+    color:#a56333;
+    font-weight: bolder;
+    font-size: 30px;
+}
+#banner1 h5{
+    padding-top:10px;
+    color: #000;
+    opacity: 80%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#banner1 button{
+    background-color: #836953;
+    color: #000;
+    border:0;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    font-family:'Rockwell';
+    
+}
+#banner1 button:hover{
+    background-color: #0d0e12;
+    color: #d6cfc2;
+}
+#new{
+    padding-top: 50px;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.productc{
+    display: flex;
+    justify-content: space-between;
+    padding :20px;
+    flex-wrap: wrap;
+}
+#new h5{
+    color: #496f72;
+
+}
+.product{
+    min-width: 270px;
+    min-height: 400px;
+    width:23%;
+    border: 1px solid #ADD8E6;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0px 3px 8px 0px #496f72;
+    position: relative;
+    margin-bottom: 20px;
+}
+.product img{
+    width: 100%;
+    border-radius: 25px;
+    max-width: 270px;
+    padding-top: 10px;
+    max-height: 230px;
+    top: 200px;
+
+}
+.product:hover{
+    box-sizing: none;
+    box-shadow: 0px 3px 15px 0px #61784c;
+    transition: 0.2s ease;
+}
+.product .des{
+    text-align: start;
+    padding: 15px 0px;
+    margin-left: 15px;
+    position: absolute;
+    bottom: 5px;
+    right:20px;
+}
+.product .des span{
+    color: #61784c;
+    font-size: 12px;
+}
+.product .des h5{
+    padding-top: 5px;
+    color: #0d0e12;
+    font-size: 14px;
+}
+.product .des i{
+    font-size: 12px;
+    color:#FF9529;
+}
+.product .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #4c802e;
+}
+.product .bag{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius:50px ;
+    background-color: rgb(240, 251, 255);
+    color: #61784c;
+    border: 1px solid rgb(186, 240, 219);
+    position: absolute;
+    bottom: 10px;
+    right:20px
+}
+#banner2{
+    padding-left: 80px;
+    background-image: url("Project/banner2.jpg");
+    height: 60vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+#banner2 h1{
+    padding-bottom: 15px;
+    color: #0d0e12;
+    font-size: 50px;
+}
+#banner2 h4{
+    padding-bottom: 15px;
+    color:#7B3F00;
+    font-weight: bolder;
+    font-size: 30px;
+}
+#banner2 h5{
+    padding-top:10px;
+    color: #000;
+    opacity: 80%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#banner2 button{
+    background-color: #836953;
+    color: #000;
+    border:0;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    font-family:'Rockwell';
+    
+}
+#banner2 button:hover{
+    background-color: #0d0e12;
+    color: #d6cfc2;
+}
+.owl-nav{
+    text-align: center;
+    font-size:50px;
+    color: #000;
+}
+#deals{
+    padding-top: 20px;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#deals h5{
+    color: #496f72;
+
+}
+.owl-theme{
+    padding-top:20px;
+    padding-left:20px;
+
+}
+
+.product .discount{
+    color: red;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color:#000;
+    padding: 30px;
+    color:#a56333
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer h4{
+    font-weight: 14px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+footer a{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+    text-decoration: none;
+    color:#a56333;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+footer a:hover{
+    color: #7B3F00;
+    font-style: italic;
+}
+.copyright{
+    background-color: #000;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #a56333;
+}
+
+/* store page */
+#storebanner{
+    padding-right: 80px;
+    background-image: url("Project/storebanner.jpg");
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    color: #0d0e12;
+    align-items: flex-end;
+    justify-content:center ;
+    flex-direction: column;
+    background-position: center;
+}
+#storebanner h4{
+    font-size: 45px;
+}
+#headbanner{
+    background-image: url("Project/headbanner.jpg");
+    margin-top: 20px;
+    height: 20vh;
+    background-position: center;
+    font-size: 45px;
+    text-align: center;
+}
+#headbanner h4{
+    color: #DCAE96;
+    padding-top: 20px;
+}
+
+/* product page */
+#details .proimg{
+    width: 40%;
+    margin: 30px;
+}
+#details{
+    display: flex;
+    margin-top: 20px;
+}
+#details .prodetails{
+    width:50%;
+    padding-top: 30px;
+}
+#details .prodetails h4{
+    padding: 40px 0 20px 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+#details .prodetails h2{
+    font-size: 25px;
+}
+#details .prodetails input{
+    width: 50px;
+    height:30px;
+    margin:10px ;
+    font-size: 16px;
+    margin-right: 10px;
+}
+#details .prodetails input:focus{
+    outline: none;
+}
+#details .prodetails button{
+    background-color: #836953;
+    color: #000;
+    border:0;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    font-family:'Rockwell';
+}
+#details button:hover{
+    background-color: #0d0e12;
+    color: #d6cfc2;
+}
+#details .prodetails span{
+    line-height: 25px;
+}
+#details .prodetails h5{
+    padding:20px 0px;
+}
+
+/* account */
+button{
+    background-color: #836953;
+    color: #000;
+    border:0;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    font-family:'Rockwell';
+}
+button:hover{
+    background-color: #0d0e12;
+    color: #d6cfc2;
+}
+.account{
+    background: #fff;
+    width: 320px;
+    height:400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: 50px;
+    margin-left: 800px;
+    box-shadow: 0 0 20px 0px #000;
+    overflow: hidden;
+}
+.account a{
+    text-decoration: none;
+    color: #555;
+    padding-left: 20px;
+}
+.account form{
+    max-width: 260px;
+    top: 130px;
+    padding: 0 20px;
+    position:absolute;
+    transition: transform 1s;
+}
+.account span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display:inline-block;
+}
+.account input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border:1 px solid #F8C8DC;
+}
+#login{
+    left: -320px;
+}
+#reg{
+    left: 0;
+}
+#line{
+    width: 100px;
+    border: none;
+    background-color: #a56333;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(170px);
+    transition: transform 1s;
+}
+
+/* contact us page */
+.feedback h2{
+    text-align: center;
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.regform{
+    width: 500px;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.regform input{
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid #96501e;
+}
+.regform input:focus{
+    border-bottom: 2px solid #7B3F00;
+    outline: none;
+}
+.regform button{
+    margin-bottom: 20px;
+}
+
+/* about page */
+.about{
+    width: 100%;
+    padding: 78px 0px;
+    background-color: #d6c2c3;
+    display: flex;
+}
+.about img{
+    height: auto;
+    width: 400px;
+    border : 2px solid #000;
+}
+.about .content{
+    padding: 30px;
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/* Responsive */
+@media (max-width:799px){
+    #nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position:fixed;
+        top:0;
+        right:-400px;
+        height:100vh;
+        width: 300px;
+        background-color: #000;
+        box-shadow: 0 40px 60px #000;
+        padding:80px 0 0 10px;
+        transition: 0.3s;
+    }
+    #nav.active{
+        right: 0px;
+    }
+    #nav li{
+        margin-bottom: 25px;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        color:#d6cfc2;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top:30px;
+        left:30px;
+        color: aliceblue;
+        font-size: 24px;
+    }
+    #banner1 {
+        padding-left: 20px;
+        height: 70vh;
+        background-position: top 30% right 60%;
+    }
+    .productc {
+        justify-content: center;
+    }
+    .product {
+        margin: 30px;
+    }
+    #banner2{
+        padding-left: 20px;
+    }
+    #details{
+        display: flex;
+        flex-direction: column;
+    }
+    #details .proimg{
+        width: 100%;
+        margin-left: 0px;
+    }
+    #details .prodetails{
+        width: 100%;
+        margin-left: 20px;
+    }
+    .regform{
+        width:auto;
+    }
+    .account{
+        margin-left: auto;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about img{
+        width:auto;
+    }
+    .about .content{
+        padding: 30px 0px;
+    }
+
+}
